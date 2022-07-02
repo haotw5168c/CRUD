@@ -1,7 +1,7 @@
 <?php
 require_once "db.php";
 
-$sql = "SELECT `id`, `title`, `content` FROM `billboard`";
+$sql = "SELECT `id`, `title`, `content` FROM `board`";
 
 if(isset($_GET["id"])) {
     $sql = $sql . " WHERE `id` = " . $_GET["id"];
@@ -27,7 +27,4 @@ mysqli_free_result($db_result);
 
 header("Content-Type: application/json");
 echo json_encode($response_data);
-
-//header("HTTP/1.1 404 Not Found");
-//header("HTTP/1.1 200 OK");
 ?>
