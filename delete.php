@@ -4,7 +4,7 @@ require_once "db.php";
 $response_data = array();
 
 if(isset($_GET["id"])) {
-    $sql = "DELETE FROM `billboard` WHERE `id` = " . $_GET["id"];
+    $sql = "DELETE FROM `board` WHERE `id` = " . $_GET["id"];
 
     $db_result = mysqli_query($db_link, $sql);
 
