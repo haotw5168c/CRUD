@@ -11,6 +11,16 @@
     |title|string|required|公佈欄標題|
     |content|string|required|公佈欄內容|
 
+    Response
+    
+    處理成功
+    
+    `{"message":"success"}`
+    
+    處理失敗
+    
+    `{"message":"主機回傳錯誤訊息"}`
+    
 2. 查詢公佈欄資料
     
     Api Url: board/read.php
@@ -20,12 +30,33 @@
     - 查詢所有公佈欄資料
     
         無須填入參數
+        
+        Response
+        
+        ```json
+        [
+            {"id":"1","title":"Title Example","content":"Content Example"},
+            {"id":"2","title":"Title ABC ","content":"Content ABC"}
+        ]
+        ```
     
     - 查詢某個公佈欄資料
     
         |Url參數|格式|必填|說明|
         |-|-|-|-|
         |id|integer|required|要查詢公佈欄資料 ID|
+        
+        Response
+        
+        ```json
+        [
+            {
+                "id":"1",
+                "title":"Title Example",
+                "content":"Content Example"
+            }
+        ]
+        ```
  
 3. 更改某筆公佈欄資料
 
@@ -38,6 +69,16 @@
     |id|integer|required|更改某筆公佈欄資料 ID|
     |title|string|required|公佈欄標題|
     |content|string|required|公佈欄內容|
+    
+    Response
+    
+    處理成功
+    
+    `{"message":"success"}`
+    
+    處理失敗
+    
+    `{"message":"主機回傳錯誤訊息"}`
 
 4. 刪除某個公佈欄資料
 
@@ -48,3 +89,13 @@
     |Url參數|格式|必填|說明|
     |-|-|-|-|
     |id|integer|required|要刪除公佈欄資料 ID|
+    
+    Response
+    
+    處理成功
+    
+    `{"message":"success"}`
+    
+    處理失敗
+    
+    `{"message":"主機回傳錯誤訊息"}`
