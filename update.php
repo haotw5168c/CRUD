@@ -4,7 +4,7 @@ require_once "db.php";
 $response_data = array();
 
 if(isset($_POST["id"]) && isset($_POST["title"]) && isset($_POST["content"])) {
-    $sql = "UPDATE `billboard` SET `title` = '" . $_POST["title"] . "', `content` = '" . $_POST["content"] . "' WHERE `id` = " . $_POST["id"];
+    $sql = "UPDATE `board` SET `title` = '" . $_POST["title"] . "', `content` = '" . $_POST["content"] . "' WHERE `id` = " . $_POST["id"];
 
     $db_result = mysqli_query($db_link, $sql);
 
