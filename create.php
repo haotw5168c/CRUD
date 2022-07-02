@@ -4,7 +4,7 @@ require_once "db.php";
 $response_data = array();
 
 if(isset($_POST["title"]) && isset($_POST["content"])) {
-    $sql = "INSERT INTO `billboard` (`title`, `content`) VALUES ('" . $_POST["title"] . "', '" . $_POST["content"] ."')";
+    $sql = "INSERT INTO `board` (`title`, `content`) VALUES ('" . $_POST["title"] . "', '" . $_POST["content"] ."')";
 
     $db_result = mysqli_query($db_link, $sql);
 
