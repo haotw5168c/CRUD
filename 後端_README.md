@@ -1,5 +1,7 @@
 # 後端
 
+服務架構簡述：透過呼叫對應的 CRUD PHP Url 來對操作資料庫進行操作處理。
+
 1. 新增公佈欄資料
 
     Api Url: board/create.php
