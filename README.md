@@ -1,4 +1,9 @@
-# 說明
+# 前端說明
+
+用瀏覽器打開 index.html 測試頁面，內有設計 CRUD 測試表單，輸入對應資料後，點擊提交按鈕，即可收到主機回應的 JSON 格式資料。
+
+
+# 後端說明
 
 服務架構簡述：透過呼叫對應的 CRUD PHP Url 來對操作資料庫進行操作處理。
 
@@ -38,7 +43,7 @@
         ```json
         [
             {"id":"1","title":"Title Example","content":"Content Example"},
-            {"id":"2","title":"Title ABC ","content":"Content ABC"}
+            {"id":"2","title":"Title ABC","content":"Content ABC"}
         ]
         ```
     
